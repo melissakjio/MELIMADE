@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MeliMade creates personalized bracelets, necklaces and keychains designed to celebrate your style and meaningful connections.">
+<title>MeliMade | Personalized Accessories</title>
+<style>
+:root{--ink:#302a35;--muted:#766d79;--cream:#fbf7f2;--rose:#ead6d5;--plum:#73566e;--lav:#e8e0eb;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}.top{padding:17px 7%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e9e1dc;background:#fbf7f2}
+.logo{font-family:Georgia,serif;font-size:29px;letter-spacing:1.5px;color:var(--plum)}nav{display:flex;gap:28px;font-size:13px;color:var(--muted)}
+.hero{padding:75px 7% 70px;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.kicker{text-transform:uppercase;letter-spacing:3px;color:var(--plum);font-size:11px;font-weight:bold}
+h1{font-family:Georgia,serif;font-weight:normal;font-size:clamp(44px,6vw,76px);line-height:1.04;margin:18px 0 22px;max-width:620px}
+.hero p{font-size:17px;line-height:1.8;color:var(--muted);max-width:490px}
+.btn{display:inline-block;background:var(--plum);color:white;padding:15px 25px;border-radius:2px;font-size:13px;letter-spacing:.5px;margin-top:16px}
+.art{min-height:390px;background:linear-gradient(145deg,#eee2e2,#e7dce9);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.orbit{width:290px;height:290px;border:2px solid rgba(115,86,110,.5);border-radius:50%;position:absolute;transform:rotate(-22deg)}
+.orbit:before{content:"";position:absolute;inset:22px;border:1px solid rgba(115,86,110,.35);border-radius:50%}
+.beads{font-size:44px;letter-spacing:7px;z-index:1;transform:rotate(-12deg);color:#73566e;text-shadow:0 5px 12px #fff}
+.artnote{position:absolute;bottom:22px;right:24px;font-family:Georgia,serif;font-style:italic;color:#73566e}
+.section{padding:72px 7%}.section.white{background:white}
+.center{text-align:center}.center h2{font-family:Georgia,serif;font-weight:normal;font-size:42px;margin:12px 0}
+.intro{color:var(--muted);line-height:1.7;max-width:620px;margin:0 auto 38px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--cream);padding:15px 15px 23px;text-align:left}
+.product-art{height:210px;display:flex;align-items:center;justify-content:center;background:var(--lav);font-size:45px;color:var(--plum)}
+.card:nth-child(2) .product-art{background:#f1e4df}.card:nth-child(3) .product-art{background:#e7e8df}
+.card h3{font-family:Georgia,serif;font-size:23px;font-weight:normal;margin:18px 0 7px}
+.card p{font-size:13px;line-height:1.6;color:var(--muted);margin:0}
+.price{display:block;margin-top:12px;font-size:13px;color:var(--plum);font-weight:bold}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:38px}
+.step{border-top:1px solid #d8cbd6;padding-top:18px}
+.num{font-family:Georgia,serif;font-size:30px;color:var(--plum)}
+.step h3{font-family:Georgia,serif;font-weight:normal;font-size:22px;margin:8px 0}
+.step p{font-size:14px;line-height:1.7;color:var(--muted)}
+.callout{background:var(--lav);padding:55px 7%;text-align:center}
+.callout h2{font-family:Georgia,serif;font-weight:normal;font-size:40px;margin:0 0 12px}
+.callout p{color:var(--muted);line-height:1.7;max-width:600px;margin:0 auto}
+footer{padding:27px 7%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:var(--muted);font-size:12px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:50px}.art{min-height:300px}.cards,.steps{grid-template-columns:1fr}nav{gap:12px;font-size:11px}.top{padding:15px 5%}.section{padding:55px 6%}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#">MeliMade</a>
+  <nav><a href="#collection">Collection</a><a href="#how">How it works</a><a href="#about">About</a></nav>
+</header>
+<main>
+<section class="hero">
+  <div>
+    <div class="kicker">Small details. Personal meaning.</div>
+    <h1>Accessories made to feel like yours.</h1>
+    <p>MeliMade creates personalized bracelets, necklaces and keychains that turn colors, initials and little details into pieces worth keeping — for yourself or someone special.</p>
+    <a class="btn" href="#collection">EXPLORE THE COLLECTION</a>
+  </div>
+  <div class="art" aria-label="Decorative illustration of personalized beads">
+    <div class="orbit"></div><div class="beads">● ◇ ● ✦ ●</div>
+    <div class="artnote">made with your story in mind</div>
+  </div>
+</section>
+<section class="section white center" id="collection">
+  <div class="kicker">The MeliMade collection</div>
+  <h2>Made for your kind of meaning</h2>
+  <p class="intro">Choose a style, combine your favorite colors and add the details that make each accessory personal. Every piece is prepared according to the customer's preferences.</p>
+  <div class="cards">
+    <article class="card"><div class="product-art">◉ ✧ ◉</div><h3>Personalized bracelets</h3><p>Beads, colors, initials and small charms combined to create an everyday piece that feels like you.</p><span class="price">From S/ 35</span></article>
+    <article class="card"><div class="product-art">◇ ✦ ◇</div><h3>Custom necklaces</h3><p>Simple, meaningful designs with selected charms and details for yourself or as a thoughtful gift.</p><span class="price">From S/ 55</span></article>
+    <article class="card"><div class="product-art">✧ ▢ ✧</div><h3>Personalized keychains</h3><p>A small accessory with a name, color combination or symbol that makes everyday objects your own.</p><span class="price">From S/ 25</span></article>
+  </div>
+</section>
+<section class="section" id="how">
+  <div class="center"><div class="kicker">A simple process</div><h2>Your idea, your details</h2><p class="intro">Personalizing an accessory should be easy. MeliMade keeps the process direct and collaborative.</p></div>
+  <div class="steps">
+    <div class="step"><div class="num">01</div><h3>Choose your piece</h3><p>Select a bracelet, necklace or keychain from the collection.</p></div>
+    <div class="step"><div class="num">02</div><h3>Make it personal</h3><p>Pick the colors, initials, charms and other details you would like to include.</p></div>
+    <div class="step"><div class="num">03</div><h3>Made for you</h3><p>Your order is prepared after the design and details have been confirmed.</p></div>
+  </div>
+</section>
+<section class="callout" id="about">
+  <div class="kicker">About MeliMade</div><h2>Little accessories, personal stories.</h2>
+  <p>MeliMade is a personalized accessories venture based in Peru. It focuses on affordable, customizable pieces and meaningful gifts for students and young adults. The goal is simple: make it easier to express your style and celebrate the people and moments that matter.</p>
+  <a class="btn" href="#collection">FIND YOUR FAVORITE</a>
+</section>
+</main>
+<footer><span>© 2026 MeliMade</span><span>Personalized bracelets · necklaces · keychains</span><span>Peru</span></footer>
+</body>
+</html>
